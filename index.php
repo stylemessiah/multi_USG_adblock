@@ -37,7 +37,7 @@
                 
                 <span class="navbar-caption-wrap">
                     <a class="navbar-caption text-white display-4" href="">
-                        UniAdBlock
+                        Multi USG Adblock
                     </a>
                 </span>
             </div>
