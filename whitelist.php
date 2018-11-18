@@ -62,14 +62,9 @@ echo "<meta http-equiv='refresh' content='0'>";
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  <link rel="stylesheet" type="text/css" href="assets/datatables/select.bootstrap4.min.css"/>
-  <script type="text/javascript" src="assets/datatables/select.bootstrap4.min.js"></script>
 </head>
 <body>
 
