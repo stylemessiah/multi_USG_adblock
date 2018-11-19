@@ -100,8 +100,8 @@ $remdomain = $_POST["id"];
 
 <section class="section-table cid-r65YSca07c" id="table1-8">
   <div class="container container-table">
-      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-2">
-        Whitelist (Unblock) & Unwhitelist Websites</h2>
+      <h1 class="mbr-section-title align-center">
+        Whitelist (Unblock) & Unwhitelist Websites</h1>
 		<p>
 		<b>Important Note On Terminology:</b> When we Whitelist (Unblock) or Blacklist (Block) websites, we do it by using the domain name only, or the main part of the websites address only, i.e. the domain name from the web address (for example) <b>http://www.smh.com.au/help/</b> is <b>smh.com.au</b>  - that is, everything <b>after</b> the <b>http://www.</b> and <b>before</b> the first single slash <b>/</b> if there is one.
 		<p>
