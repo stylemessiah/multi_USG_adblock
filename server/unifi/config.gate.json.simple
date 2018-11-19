@@ -1,0 +1,15 @@
+{
+	"system": {
+		"task-scheduler": {
+			"task": {
+				"update_blacklist": {
+					"executable": {
+						"path": "/config/scripts/updateblacklist.sh"
+					},
+					"interval": "$interval"
+				}
+			}
+		}
+
+	}
+}
