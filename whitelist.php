@@ -24,11 +24,11 @@ if (isset($_POST["adddomain"])) {
 		//write to file
 		file_put_contents($whitelist, $contents . "\r\n");
 	}
-//force a page refresh to make sure table is updated
-echo "<meta http-equiv='refresh' content='0'>";
+	//force a page refresh to make sure table is updated
+	echo "<meta http-equiv='refresh' content='0'>";
 }
 
-//process button onclick for addomain (adding a domain to) blacklist
+//process button onclick for remdomain (removing a domain from) whitelist
 if(array_key_exists('id',$_POST)){
 $remdomain = $_POST["id"];
 //search array for domain to be removed, if found, unset (remove) it
@@ -42,29 +42,29 @@ $remdomain = $_POST["id"];
 		//write to file
 		file_put_contents($whitelist, $contents . "\r\n");	
 	}
-//force a page refresh to make sure table is updated
-echo "<meta http-equiv='refresh' content='0'>";
+	//force a page refresh to make sure table is updated
+	echo "<meta http-equiv='refresh' content='0'>";
 }
 ?>
 
 <!DOCTYPE html>
 <html >
 <head>
-  <!-- Site made with Mobirise Website Builder v4.8.2, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.8.2, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
-  <meta name="description" content="Web Site Generator Description">
-  <title>Whitelist (Unblock) A Website</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+<!-- Site made with Mobirise Website Builder v4.8.2, https://mobirise.com -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Mobirise v4.8.2, mobirise.com">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
+<meta name="description" content="Web Site Generator Description">
+<title>Whitelist (Unblock) A Website</title>
+<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+<link rel="stylesheet" href="assets/tether/tether.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="assets/dropdown/css/style.css">
+<link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 </head>
 <body>
 
@@ -113,7 +113,7 @@ echo "<meta http-equiv='refresh' content='0'>";
 		<p></p>
 		If the domain name is not displayed in the search results, then it is not already whitelisted.
 		<p></p>
-		Next, type the domain name you wish to whitelist(Unblock) into the box below titled <b>"type a domain name"</b>, and then click the <b>"Whitelist( Unblock) this site"</b> button
+		Next, type the domain name you wish to whitelist(unblock) into the box below titled <b>"type a domain name"</b>, and then click the <b>"Whitelist( Unblock) this site"</b> button
 		<p></p>
 		The page will automatically reload and the domain should be added to the whitelist, and visible in the table at the bottom of the page. If you want to, you can always use the <b>"Search for domain name"</b> box to make sure it has been added.
 		<p></p>
@@ -161,11 +161,12 @@ echo "<meta http-equiv='refresh' content='0'>";
             </div>
           </div>
         </div>
+		<p>
         <div class="container scroll">
 		<form method = "post">
           <table class="table isSearch" id="domains" cellspacing="0">
             <thead>
-              <tr class="table-heads ">
+              <tr class="table-heads">
               <th class="head-item mbr-fonts-style display-11">
               <?php echo $numdomains ?> currently whitelisted sites</th></tr>
             </thead>
@@ -177,9 +178,9 @@ echo "<meta http-equiv='refresh' content='0'>";
 			}
 			}
 			?>
+			</tbody>
 			</form>					  	
 			</table>
-		
         </div>
         <div class="container table-info-container">
           <div class="row info">
@@ -199,17 +200,13 @@ echo "<meta http-equiv='refresh' content='0'>";
       </div>
     </div>
 </section>
-
-
-  <section class="engine"><a href="https://mobiri.se">Mobirise</a></section><script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/datatables/jquery.data-tables.min.js"></script>
-  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  
-  
+<section class="engine"><a href="https://mobiri.se">Mobirise</a></section><script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="assets/popper/popper.min.js"></script>
+<script src="assets/tether/tether.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/smoothscroll/smooth-scroll.js"></script>
+<script src="assets/datatables/jquery.data-tables.min.js"></script>
+<script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+<script src="assets/theme/js/script.js"></script>
 </body>
 </html>

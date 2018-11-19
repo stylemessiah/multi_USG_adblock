@@ -3,7 +3,7 @@
 $blacklist = 'ownblacklist.txt';
 //get file contents into array
 $contents = file($blacklist, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-//sort array - note this sorts it for display,
+//sort array - note this sorts it for display
 usort($contents, "strcasecmp");
 //make sure there are no duplicates in array
 $contents = array_unique($contents);
@@ -17,20 +17,20 @@ if (isset($_POST["adddomain"])) {
 	if(!in_array($adddomain, $contents)){
 		//add the domain to the array
 		$contents[] = $adddomain;
-		//sort the array for writing for file  
+		//sort the array for writing for file 
 		usort($contents, "strcasecmp"); 	
 		//convert the array to string
 		$contents = implode("\r\n",$contents);
 		//write to file
 		file_put_contents($blacklist, $contents . "\r\n");
 	}
-//force a page refresh to make sure table is updated
-echo "<meta http-equiv='refresh' content='0'>";
+	//force a page refresh to make sure table is updated
+	echo "<meta http-equiv='refresh' content='0'>";
 }
 
 //process button onclick for remdomain (removing a domain from) blacklist
 if(array_key_exists('id',$_POST)){
-	$remdomain = $_POST["id"];
+$remdomain = $_POST["id"];
 //search array for domain to be removed, if found, unset (remove) it
 	if (($key = array_search($remdomain, $contents)) !== false) {
 		//remove the matching array item
@@ -42,29 +42,29 @@ if(array_key_exists('id',$_POST)){
 		//write to file
 		file_put_contents($blacklist, $contents . "\r\n");	
 	}
-//force a page refresh to make sure table is updated
-echo "<meta http-equiv='refresh' content='0'>";
+	//force a page refresh to make sure table is updated
+	echo "<meta http-equiv='refresh' content='0'>";
 }
 ?>
 
 <!DOCTYPE html>
 <html >
 <head>
-  <!-- Site made with Mobirise Website Builder v4.8.2, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.8.2, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
-  <meta name="description" content="Web Site Generator Description">
-  <title>Blacklist (Block) A Website</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+<!-- Site made with Mobirise Website Builder v4.8.2, https://mobirise.com -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Mobirise v4.8.2, mobirise.com">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
+<meta name="description" content="Web Site Generator Description">
+<title>Blacklist (Block) A Website</title>
+<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+<link rel="stylesheet" href="assets/tether/tether.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="assets/dropdown/css/style.css">
+<link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 </head>
 <body>
 
@@ -113,13 +113,13 @@ echo "<meta http-equiv='refresh' content='0'>";
 		<p></p>
 		If the domain name is not displayed in the search results, then it is not already blacklisted.
 		<p></p>
-		Next, type the domain name you wish to blacklist(Block) into the box below titled <b>"type a domain name"</b>, and then click the <b>"Blacklist(Block) this site"</b> button
+		Next, type the domain name you wish to blacklist(block) into the box below titled <b>"type a domain name"</b>, and then click the <b>"Blacklist(Block) this site"</b> button
 		<p></p>
 		The page will automatically reload and the domain should be added to the blacklist, and visible in the table at the bottom of the page. If you want to, you can always use the <b>"Search for domain name"</b> box to make sure it has been added.
 		<p></p>
 		The USG's will pick up the changes made here on their next scheduled update
 		</div>
-		</div>		
+		</div>			
 		<p>&nbsp;</p>
 		<form class="form-inline" method = "POST">  
 		<label for="usr">Add a new site to the blacklist:</label>&nbsp;&nbsp;&nbsp;
@@ -130,7 +130,7 @@ echo "<meta http-equiv='refresh' content='0'>";
 		</form>
 		<p>&nbsp;</p>
 		<div class="container">
-		<a href="#reminfo" class="btn btn-warning p-1" data-toggle="collapse">Click here for steps to remove a site from the blacklist</a>
+		  <a href="#reminfo" class="btn btn-warning p-1" data-toggle="collapse">Click here for steps to remove a site from the blacklist</a>
 		<div id="reminfo" class="collapse">
 		<p>
 		You can either:
@@ -143,7 +143,7 @@ echo "<meta http-equiv='refresh' content='0'>";
 		<p></p>
 		If the domain name is displayed in the search results, then simply click the <b>Un-Blacklist</b> button to the left of the entry.
 		<p></p>
-		Either way, the page will automatically reload and the domain should be removed from the black``list, and no visible in the table at the bottom of the page. If you want to, you can always use the <b>"Search for domain name"</b> box to make sure it has been removed.
+		Either way, the page will automatically reload and the domain should be removed from the blacklist, and no visible in the table at the bottom of the page. If you want to, you can always use the <b>"Search for domain name"</b> box to make sure it has been removed.
 		<p></p>
 		The USG's will pick up the changes made here on their next scheduled update
 		</div>
@@ -155,17 +155,18 @@ echo "<meta http-equiv='refresh' content='0'>";
             <div class="col-md-6"></div>
             <div class="col-md-6">
                 <div class="dataTables_filter">
-                  <label class="searchInfo mbr-fonts-style display-7">Search for domain name:</label>
+                  <label class="searchInfo mbr-fonts-style display-11">Search for domain name:</label>
                   <input class="form-control input-sm" disabled="">
                 </div>
             </div>
           </div>
         </div>
+		<p>
         <div class="container scroll">
 		<form method = "post">
-          <table class="table isSearch id="domains" cellspacing="0">
+          <table class="table isSearch" id="domains" cellspacing="0">
             <thead>
-              <tr class="table-heads ">
+              <tr class="table-heads">
               <th class="head-item mbr-fonts-style display-11">
               <?php echo $numdomains ?> currently blacklisted sites</th></tr>
             </thead>
@@ -177,8 +178,9 @@ echo "<meta http-equiv='refresh' content='0'>";
 			}
 			}
 			?>
-			</form>					    
-          </table>
+			</tbody>
+			</form>					  	
+			</table>
         </div>
         <div class="container table-info-container">
           <div class="row info">
@@ -198,17 +200,13 @@ echo "<meta http-equiv='refresh' content='0'>";
       </div>
     </div>
 </section>
-
-
-  <section class="engine"><a href="https://mobiri.se">Mobirise</a></section><script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/datatables/jquery.data-tables.min.js"></script>
-  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  
-  
+<section class="engine"><a href="https://mobiri.se">Mobirise</a></section><script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="assets/popper/popper.min.js"></script>
+<script src="assets/tether/tether.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/smoothscroll/smooth-scroll.js"></script>
+<script src="assets/datatables/jquery.data-tables.min.js"></script>
+<script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+<script src="assets/theme/js/script.js"></script>
 </body>
 </html>
