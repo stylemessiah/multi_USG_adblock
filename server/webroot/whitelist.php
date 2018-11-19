@@ -130,12 +130,12 @@ $remdomain = $_POST["id"];
 		</form>
 		<p>&nbsp;</p>
 		<div class="container">
-		  <a href="#reminfo" class="btn btn-warning p-1" data-toggle="collapse">Click here for steps to remove a site from the whitelist</a>
+		<a href="#reminfo" class="btn btn-warning p-1" data-toggle="collapse">Click here for steps to remove a site from the whitelist</a>
 		<div id="reminfo" class="collapse">
-		<p>
+		<p></p>
 		You can either:
 		<p></p>
-		Browse the list of domain names below and click the <b>Un-Whitelist</b> button to the left of the entry.
+		Browse the list of domain names below and click the <b>Un-Whitelist</b> button to the left of the entry for the domain you wish to remove from the whitelist.
 		<p></p>
 		OR
 		<p></p>
@@ -146,6 +146,9 @@ $remdomain = $_POST["id"];
 		Either way, the page will automatically reload and the domain should be removed from the whitelist, and no visible in the table at the bottom of the page. If you want to, you can always use the <b>"Search for domain name"</b> box to make sure it has been removed.
 		<p></p>
 		The USG's will pick up the changes made here on their next scheduled update
+		<p></p>		
+		<b>Note:</b> Removing a site from the whitelist does not mean it will necessarily be blacklisted. If the site appears on the main blacklist, then removing it from the whitelist here will blacklist.
+		If you definitely want the site you're removing from the whitelist to be blocked, remove it from the whitelist and test it, and if its still accessible, return here and add it to the <a href="blacklist.php">blacklist</a>		
 		</div>
 		</div> 		
 		<p>&nbsp;</p> 

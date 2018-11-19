@@ -132,10 +132,10 @@ $remdomain = $_POST["id"];
 		<div class="container">
 		  <a href="#reminfo" class="btn btn-warning p-1" data-toggle="collapse">Click here for steps to remove a site from the blacklist</a>
 		<div id="reminfo" class="collapse">
-		<p>
+		<p></p>
 		You can either:
 		<p></p>
-		Browse the list of domain names below and click the <b>Un-Blacklist</b> button to the left of the entry.
+		Browse the list of domain names below and click the <b>Un-Blacklist</b> button to the left of the entry for the domain you wish to remove from the blacklist
 		<p></p>
 		OR
 		<p></p>
