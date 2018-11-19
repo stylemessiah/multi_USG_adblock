@@ -147,7 +147,7 @@ $remdomain = $_POST["id"];
 		<p></p>
 		The USG's will pick up the changes made here on their next scheduled update
 		<p></p>		
-		<b>Note:</b> Removing a site from the whitelist does not mean it will necessarily be blacklisted. If the site appears on the main blacklist, then removing it from the whitelist here will blacklist.
+		<b>Note:</b> Removing a site from the whitelist does not mean it will necessarily be blacklisted. If the site appears on the main blacklist, then removing it from the whitelist here will blacklist it.
 		If you definitely want the site you're removing from the whitelist to be blocked, remove it from the whitelist and test it, and if its still accessible, return here and add it to the <a href="blacklist.php">blacklist</a>		
 		</div>
 		</div> 		
