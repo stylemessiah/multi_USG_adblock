@@ -17,7 +17,7 @@ It should go without saying this is 3rd party software i developed for my own pe
 Disclaimer:
 
 If you choose to download any file from my repository and use it any way, both in ways outlined by me, or in ways
-i did not envisage, you do so at your own risk. I will nto be liable for any damages incurred by the proper or improper
+i did not envisage, you do so at your own risk. I will not be liable for any damages incurred by the proper or improper
 use of any shared file or instruction.
 
 Always make a backup of critical files before running any script.
