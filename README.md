@@ -8,7 +8,9 @@ There are php files to easily allow user maintenance of user white/black lists.
 
 All your require is a web server, and admin access to the Ubiquiti USG. 
 
-The script does not in any way need access to, integrate with, or require changes to the Unifi Controller software.
+The scripts do not in any way need access to, integrate with, or require changes to the Unifi Controller software,
+apart from an entry in the config.gateway.json to set a script to run on a user selectable schedule. Adding this
+via config.gateway.json will ensure the script survives a USG firmware update.
 
 It should go without saying this is 3rd party software i developed for my own personal use. 
 
