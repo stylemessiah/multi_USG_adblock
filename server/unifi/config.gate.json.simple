@@ -4,7 +4,7 @@
 			"task": {
 				"update_blacklist": {
 					"executable": {
-						"path": "/config/scripts/updateblacklist.sh"
+						"path": "/config/scripts/usg_update_blacklist.sh"
 					},
 					"interval": "$interval"
 				}
