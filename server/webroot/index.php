@@ -33,7 +33,7 @@
             <div class="navbar-brand">
                 
                 <span class="navbar-caption-wrap">
-                    <a class="navbar-caption text-white display-4" href="">
+                    <a class="navbar-caption text-white display-4" href="https://github.com/stylemessiah/multi_USG_adblock" target="_blank">
                         Multi USG Adblock
                     </a>
                 </span>

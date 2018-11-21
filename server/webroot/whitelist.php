@@ -82,7 +82,7 @@ $remdomain = $_POST["id"];
             <div class="navbar-brand">
                 
                 <span class="navbar-caption-wrap">
-                    <a class="navbar-caption text-white display-4" href="">
+                    <a class="navbar-caption text-white display-4" href="https://github.com/stylemessiah/multi_USG_adblock" target="_blank">
                         Multi USG Adblock
                     </a>
                 </span>
@@ -147,8 +147,8 @@ $remdomain = $_POST["id"];
 		<p></p>
 		The USG's will pick up the changes made here on their next scheduled update
 		<p></p>		
-		<b>Note:</b> Removing a site from the whitelist does not mean it will necessarily be blacklisted. If the site appears on the main blacklist, then removing it from the whitelist here will blacklist it.
-		If you definitely want the site you're removing from the whitelist to be blocked, remove it from the whitelist and test it, and if its still accessible, return here and add it to the <a href="blacklist.php">blacklist</a>		
+		<b>Note:</b> Removing a site from the whitelist does not mean it will necessarily be blacklisted (blocked). If the site appears on the main blacklist, then removing it from the whitelist here will blacklist (block) it.
+		If you definitively want the site you're removing from the whitelist here to be blacklisted (blocked), remove it from the whitelist here and test it, and if its still accessible, return here and add it to your personal <a href="blacklist.php">blacklist</a>		
 		</div>
 		</div> 		
 		<p>&nbsp;</p> 

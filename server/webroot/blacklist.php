@@ -82,7 +82,7 @@ $remdomain = $_POST["id"];
             <div class="navbar-brand">
                 
                 <span class="navbar-caption-wrap">
-                    <a class="navbar-caption text-white display-4" href="">
+                    <a class="navbar-caption text-white display-4" href="https://github.com/stylemessiah/multi_USG_adblock" target="_blank">
                         Multi USG Adblock
                     </a>
                 </span>
@@ -143,12 +143,12 @@ $remdomain = $_POST["id"];
 		<p></p>
 		If the domain name is displayed in the search results, then simply click the <b>Un-Blacklist</b> button to the left of the entry.
 		<p></p>
-		Either way, the page will automatically reload and the domain should be removed from the blacklist, and no visible in the table at the bottom of the page. If you want to, you can always use the <b>"Search for domain name"</b> box to make sure it has been removed.
+		Either way, the page will automatically reload and the domain should be removed from the blacklist, and not visible in the table at the bottom of the page. If you want to, you can always use the <b>"Search for domain name"</b> box to make sure it has been removed.
 		<p></p>
 		The USG's will pick up the changes made here on their next scheduled update
 		<p></p>		
-		<b>Note:</b> Removing a site from the blacklist does not mean it will necessarily be whitelisted. If the site appears on the main blacklist, then removing it from the personal blacklist may still me it is still blacklisted.
-		If you definitely want the site you're removing from the blacklist to be unblocked, remove it from the blacklist and test it, and if its still inaccessible, return here and add it to the <a href="whitelist.php">whitelist</a>		
+		<b>Important Note: Personal blacklist vs main blacklist</b> This is your personal blacklist, this is in additioon to the main blacklist, collated from multiple sources and not accessible from this page (mainly as the main blacklist is going to be several (hundred?) thousand domains. Removing a site from the blacklist does not mean it will necessarily be whitelisted (unblocked). If the site appears on the main blacklist, then removing it from the personal blacklist here may still mean it is still blacklisted.
+		If you definitively want the site you're removing from the personal blacklist here to be whitelisted (unblocked), remove it from the personal blacklist here and test it, and if its still inaccessible, return here and add it to the <a href="whitelist.php">whitelist</a>		
 		</div>
 		</div> 		
 		<p>&nbsp;</p> 
