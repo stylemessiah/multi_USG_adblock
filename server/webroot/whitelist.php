@@ -109,7 +109,7 @@ $remdomain = $_POST["id"];
 		<a href="#addinfo" class="btn btn-warning p-1" data-toggle="collapse">Click here for steps to Whitelist (Unblock) a website</a>
 		<div id="addinfo" class="collapse">		
 		<p>
-		Type the domain name (at least 2 letters of the domain name) into the <b>"Search for domain name"</b> box below, do not type the www. prefix (i.e. for website "www.example.com", type "example.com")
+		Type the domain name into the <b>"Search for domain name"</b> box below, do not type the www. prefix (i.e. for website "www.example.com", type "example.com")
 		<p></p>
 		If the domain name is not displayed in the search results, then it is not already whitelisted.
 		<p></p>
@@ -139,7 +139,7 @@ $remdomain = $_POST["id"];
 		<p></p>
 		OR
 		<p></p>
-		Type the domain name (at least 2 letters of the domain name) into the <b>"Search for domain name"</b> box below, do not type the www. prefix (i.e. for website "www.example.com", type "example.com")
+		Type the domain name into the <b>"Search for domain name"</b> box below, do not type the www. prefix (i.e. for website "www.example.com", type "example.com")
 		<p></p>
 		If the domain name is displayed in the search results, then simply click the <b>Un-Whitelist</b> button to the left of the entry.
 		<p></p>
