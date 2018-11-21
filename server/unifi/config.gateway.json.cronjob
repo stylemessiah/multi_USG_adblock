@@ -1,0 +1,14 @@
+{
+	"system": {
+		"task-scheduler": {
+			"task": {
+				"usgblacklist": {
+					"executable": {
+						"path":"/config/scripts/usg_update_blacklist.sh"
+								  },
+						"crontab-spec": "$minute $hour * * *"
+				}
+			}
+		}
+	}
+}
