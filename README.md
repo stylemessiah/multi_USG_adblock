@@ -2,7 +2,7 @@
 
 Adblocking on Ubiquiti Unifi equipment using a script on cloud server to create a centralised dnsmasq blacklist,
 using contributed widely available blacklists (user settable) which the Ubiquiti USG's at multiple locations poll 
-for changes at user set intervals, download the dnsmasq blacklist if changed, and apply them to the Ubiquiti USG's.
+for changes at user set intervals, download the dnsmasq blacklist, and user maintained whitelist, if changed, and apply them to the Ubiquiti USG's.
 
 There are php files to easily allow user maintenance of user white/black lists.
 
